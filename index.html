@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Intro to <abbr title="Java Script"></abbr> JS</h1>
-    <p>Lorem ipsum dolor sit amet 
-        adipisicing elit. Corporis, iusto reiciendis? Deserunt error dolores quos temporibus nesciunt perspiciatis ad eum facilis incidunt dolorum similique,
-        velit adipisci iure soluta sunt, aliquid, asperiores in doloremque eligendi possimus accusantium provident! Dolorem rerum illum perspiciatis vitae
-        officiis magni, accusamus soluta? Inventore mollitia ut odit?</p>
-    <!-- <script>
-        //alert("Hello from Java Script")
-        console.log("Hello from Java Script");
-    </script> -->
-    <script src="base.js"></script>
+        <!--Завдання 1-->
+    <div class="number-box">
+        <div id="display" class="display">10</div>
+        <div class="buttons">
+            <button id="upBtn" class="btn">+</button>
+            <button id="downBtn" class="btn">-</button>
+        </div>
+    </div>
+    <!--Завдання 2-->
+    <div class="gallery-container">
+        <button id="prevBtn" class="nav-btn">-</button>
+        <img id="image" src="" alt="gallery image">
+        <button id="nextBtn" class="nav-btn">+</button>
+    </div>
+    <!--Завдання 3-->
+    <div class="palette">
+    <div class="color" style="background:#ffffff;" onclick="changeColor('#ffffff')"></div>
+    <div class="color" style="background:#999999;" onclick="changeColor('#999999')"></div>
+    <div class="color" style="background:#ff0000;" onclick="changeColor('#ff0000')"></div>
+    <div class="color" style="background:#ffa500;" onclick="changeColor('#ffa500')"></div>
+    <div class="color" style="background:#ffff00;" onclick="changeColor('#ffff00')"></div>
+    <div class="color" style="background:#00ff00;" onclick="changeColor('#00ff00')"></div>
+    <div class="color" style="background:#00ffff;" onclick="changeColor('#00ffff')"></div>
+    <div class="color" style="background:#0000ff;" onclick="changeColor('#0000ff')"></div>
+    <div class="color" style="background:#800080;" onclick="changeColor('#800080')"></div>
+</div>
+
+<div class="text-box" id="textBox">
+    What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
